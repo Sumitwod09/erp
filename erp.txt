@@ -1,0 +1,61 @@
+LUMIERE ERP - System Overview & Features
+==========================================
+
+CONCEPT
+-------
+Lumiere ERP is a state-of-the-art, modular Enterprise Resource Planning (ERP) system designed for desktop environments. Unlike traditional rigid ERPs, Lumiere is "Industry-Adaptive," allowing businesses to toggle specific modules on or off based on their unique operational needs.
+
+This flexibility ensures that a retail store only sees retail tools, while a manufacturing unit has access to production planning and BOMs—all within the same core framework.
+
+CORE ARCHITECTURE
+-----------------
+- Modular Design: Features are partitioned into self-contained modules that can be activated on-demand.
+- Industry Presets: Pre-configured templates for Retail, Manufacturing, Services, and more.
+- RBAC (Role-Based Access Control): Granular permission system ensuring secure data access.
+- Cloud-First Backend: Powered by Nhost (GraphQL / PostgreSQL) for real-time synchronization and scalability.
+- Cross-Platform UI: Built with Flutter for a premium, high-performance desktop experience.
+
+DETAILED FEATURES
+-----------------
+
+1. INVENTORY MANAGEMENT
+   - Real-time stock tracking across multiple warehouses.
+   - Low-stock alerts and automated reordering points.
+   - Batch and serial number tracking.
+
+2. SALES & POINT-OF-SALE (POS)
+   - Streamlined quotation and order processing.
+   - Interactive POS interface for quick retail transactions.
+   - Customer management and sales history tracking.
+
+3. INVOICING & BILLING
+   - Professional invoice generation with customizable templates.
+   - Automated due date reminders.
+   - Integration with sales for one-click invoice creation.
+
+4. ACCOUNTING & LEDGER
+   - Double-entry bookkeeping system.
+   - Real-time financial reports (Profit/Loss, Balance Sheet).
+   - Expense tracking and bank reconciliation.
+
+5. CRM (Customer Relationship Management)
+   - Lead and opportunity management.
+   - Interaction logs and customer support ticket tracking.
+   - Sales pipeline visualization.
+
+6. HRM & PAYROLL
+   - Employee records and document management.
+   - Automated payroll calculation with tax compliance.
+   - Attendance and leave tracking.
+
+7. MANUFACTURING (BOM)
+   - Multi-level Bill of Materials (BOM) management.
+   - Work order processing and production scheduling.
+   - Raw material consumption tracking.
+
+TECHNICAL STACK
+---------------
+- Frontend: Flutter (Dart)
+- State Management: Riverpod
+- Backend: Nhost (Hasura GraphQL Engine, Postgres, Auth)
+- UI Library: Material Design 3 with custom premium aesthetics.

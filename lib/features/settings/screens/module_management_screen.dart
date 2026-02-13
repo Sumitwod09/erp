@@ -18,7 +18,15 @@ class ModuleManagementScreen extends ConsumerStatefulWidget {
 class _ModuleManagementScreenState
     extends ConsumerState<ModuleManagementScreen> {
   final List<ModuleModel> _allModules = ModuleService.getSystemModules();
+  final TextEditingController _searchController = TextEditingController();
+  String _searchQuery = '';
   bool _isProcessing = false;
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -38,16 +46,24 @@ class _ModuleManagementScreenState
       ),
       body: activeModulesAsync.when(
         data: (activeModules) {
+          final filteredModules = _allModules.where((m) {
+            final nameMatch =
+                m.name.toLowerCase().contains(_searchQuery.toLowerCase());
+            final categoryMatch =
+                m.category.toLowerCase().contains(_searchQuery.toLowerCase());
+            return nameMatch || categoryMatch;
+          }).toList();
+
           final activeModuleNames = activeModules.map((e) => e.name).toSet();
 
           return Column(
             children: [
-              const Padding(
-                padding: EdgeInsets.all(AppConstants.spaceLg),
+              Padding(
+                padding: const EdgeInsets.all(AppConstants.spaceLg),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       'Customize Your Modules',
                       style: TextStyle(
                         fontSize: AppConstants.fontSizeXl,
@@ -55,12 +71,37 @@ class _ModuleManagementScreenState
                         color: AppColors.textPrimary,
                       ),
                     ),
-                    SizedBox(height: AppConstants.spaceSm),
-                    Text(
+                    const SizedBox(height: AppConstants.spaceSm),
+                    const Text(
                       'Enable modules to access features. Disabled modules are hidden from your workspace.',
                       style: TextStyle(
                         fontSize: AppConstants.fontSizeBase,
                         color: AppColors.textSecondary,
+                      ),
+                    ),
+                    const SizedBox(height: AppConstants.spaceLg),
+                    // Search Bar
+                    TextField(
+                      controller: _searchController,
+                      onChanged: (val) => setState(() => _searchQuery = val),
+                      decoration: InputDecoration(
+                        hintText: 'Search modules by name or category...',
+                        prefixIcon: const Icon(Icons.search),
+                        suffixIcon: _searchQuery.isNotEmpty
+                            ? IconButton(
+                                icon: const Icon(Icons.clear),
+                                onPressed: () {
+                                  _searchController.clear();
+                                  setState(() => _searchQuery = '');
+                                },
+                              )
+                            : null,
+                        filled: true,
+                        fillColor: AppColors.background,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide.none,
+                        ),
                       ),
                     ),
                   ],
@@ -77,9 +118,9 @@ class _ModuleManagementScreenState
                     crossAxisSpacing: AppConstants.spaceMd,
                     childAspectRatio: 1.8,
                   ),
-                  itemCount: _allModules.length,
+                  itemCount: filteredModules.length,
                   itemBuilder: (context, index) {
-                    final module = _allModules[index];
+                    final module = filteredModules[index];
                     final isActive = activeModuleNames.contains(module.name);
 
                     return _buildModuleCard(module, isActive);
