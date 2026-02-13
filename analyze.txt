@@ -1,0 +1,243 @@
+﻿Analyzing lib...                                                
+
+  error - Target of URI doesn't exist: '../../shared/services/supabase_service.dart' - lib\core\router\app_router.dart:14:8 - uri_does_not_exist
+  error - Undefined name 'SupabaseService' - lib\core\router\app_router.dart:23:31 - undefined_identifier
+   info - Use 'const' with the constructor to improve performance - lib\core\theme\app_theme.dart:14:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\theme\app_theme.dart:124:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\theme\app_theme.dart:128:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\theme\app_theme.dart:132:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\theme\app_theme.dart:136:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:23:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:25:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:75:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:78:25 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:79:24 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\accounting\screens\ledger_screen.dart:81:29 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:82:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:88:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:90:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:97:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:99:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:107:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:108:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:109:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\accounting\screens\ledger_screen.dart:111:28 - prefer_const_constructors
+  error - Undefined class 'User' - lib\features\auth\providers\auth_provider.dart:13:9 - undefined_class
+  error - Undefined class 'User' - lib\features\auth\providers\auth_provider.dart:26:5 - undefined_class
+  error - The method 'removeAuthStateChangedCallback' isn't defined for the type 'NhostAuthClient' - lib\features\auth\providers\auth_provider.dart:72:32 - undefined_method
+  error - The method 'signUpEmailPassword' isn't defined for the type 'NhostAuthClient' - lib\features\auth\providers\auth_provider.dart:119:55 - undefined_method
+  error - The method 'SignUpOptions' isn't defined for the type 'Auth' - lib\features\auth\providers\auth_provider.dart:122:18 - undefined_method
+   info - Use 'const' for final variables initialized to a constant value - lib\features\auth\providers\auth_provider.dart:131:9 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\features\auth\providers\auth_provider.dart:142:60 - undefined_getter
+   info - Use 'const' for final variables initialized to a constant value - lib\features\auth\providers\auth_provider.dart:152:9 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\features\auth\providers\auth_provider.dart:165:35 - undefined_getter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\screens\forgot_password_screen.dart:67:43 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\forgot_password_screen.dart:87:11 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\forgot_password_screen.dart:93:11 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\forgot_password_screen.dart:96:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\forgot_password_screen.dart:103:11 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\forgot_password_screen.dart:106:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\forgot_password_screen.dart:116:25 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\forgot_password_screen.dart:118:27 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\forgot_password_screen.dart:167:9 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\forgot_password_screen.dart:173:9 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\forgot_password_screen.dart:175:18 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\forgot_password_screen.dart:182:9 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\forgot_password_screen.dart:185:18 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\screens\login_screen.dart:90:45 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\login_screen.dart:103:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\login_screen.dart:109:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\login_screen.dart:112:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\login_screen.dart:119:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\login_screen.dart:122:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\login_screen.dart:132:33 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\login_screen.dart:134:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\login_screen.dart:154:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\login_screen.dart:184:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\login_screen.dart:186:32 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\login_screen.dart:217:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\login_screen.dart:219:32 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\screens\signup_screen.dart:80:45 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:93:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:99:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:102:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:109:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:112:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:122:33 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:124:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:138:33 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:140:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:154:33 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:156:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:176:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:208:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:259:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\screens\signup_screen.dart:261:32 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\screens\dashboard_screen.dart:18:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\screens\dashboard_screen.dart:20:22 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\screens\dashboard_screen.dart:37:51 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\screens\dashboard_screen.dart:40:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\screens\dashboard_screen.dart:42:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\screens\dashboard_screen.dart:49:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\screens\dashboard_screen.dart:51:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\inventory\screens\inventory_list_screen.dart:20:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\inventory\screens\inventory_list_screen.dart:22:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\inventory\screens\inventory_list_screen.dart:38:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\inventory\screens\inventory_list_screen.dart:39:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\inventory\screens\inventory_list_screen.dart:40:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\inventory\screens\inventory_list_screen.dart:42:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\onboarding\screens\industry_selection_screen.dart:21:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\onboarding\screens\industry_selection_screen.dart:24:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\onboarding\screens\industry_selection_screen.dart:31:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\onboarding\screens\industry_selection_screen.dart:34:24 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\onboarding\screens\industry_selection_screen.dart:52:32 - prefer_const_literals_to_create_immutables
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\onboarding\screens\industry_selection_screen.dart:64:32 - prefer_const_literals_to_create_immutables
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\onboarding\screens\industry_selection_screen.dart:71:32 - prefer_const_literals_to_create_immutables
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\onboarding\screens\industry_selection_screen.dart:79:32 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\onboarding\screens\industry_selection_screen.dart:147:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\onboarding\screens\industry_selection_screen.dart:156:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\onboarding\screens\industry_selection_screen.dart:162:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\onboarding\screens\industry_selection_screen.dart:164:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\onboarding\screens\industry_selection_screen.dart:175:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\onboarding\screens\onboarding_complete_screen.dart:10:12 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\onboarding\screens\onboarding_complete_screen.dart:12:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\onboarding\screens\onboarding_complete_screen.dart:13:16 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\onboarding\screens\onboarding_complete_screen.dart:15:18 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\sales\screens\sales_list_screen.dart:20:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\sales\screens\sales_list_screen.dart:22:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\sales\screens\sales_list_screen.dart:38:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\sales\screens\sales_list_screen.dart:39:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\sales\screens\sales_list_screen.dart:40:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\sales\screens\sales_list_screen.dart:42:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\module_management_screen.dart:21:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\module_management_screen.dart:23:16 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\settings\screens\module_management_screen.dart:25:21 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\module_management_screen.dart:26:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\module_management_screen.dart:28:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\module_management_screen.dart:35:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\module_management_screen.dart:37:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\module_management_screen.dart:43:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\module_management_screen.dart:44:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\module_management_screen.dart:45:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\module_management_screen.dart:47:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\settings_screen.dart:18:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\settings_screen.dart:20:22 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\settings\screens\settings_screen.dart:88:47 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\settings_screen.dart:104:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\settings_screen.dart:113:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\settings\screens\settings_screen.dart:121:15 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\settings\screens\user_management_screen.dart:134:59 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\settings\screens\user_management_screen.dart:237:15 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\settings\screens\user_management_screen.dart:238:15 - deprecated_member_use
+   info - Unnecessary use of 'toList' in a spread - lib\features\settings\screens\user_management_screen.dart:242:14 - unnecessary_to_list_in_spreads
+  error - Target of URI doesn't exist: '../services/supabase_service.dart' - lib\shared\providers\active_modules_provider.dart:3:8 - uri_does_not_exist
+  error - Undefined name 'SupabaseService' - lib\shared\providers\active_modules_provider.dart:15:18 - undefined_identifier
+  error - Undefined name 'SupabaseService' - lib\shared\providers\active_modules_provider.dart:22:34 - undefined_identifier
+  error - Undefined name 'SupabaseService' - lib\shared\providers\active_modules_provider.dart:31:35 - undefined_identifier
+  error - Undefined name 'SupabaseService' - lib\shared\providers\active_modules_provider.dart:46:29 - undefined_identifier
+  error - Undefined name 'SupabaseService' - lib\shared\providers\active_modules_provider.dart:60:18 - undefined_identifier
+  error - Undefined name 'SupabaseService' - lib\shared\providers\active_modules_provider.dart:64:34 - undefined_identifier
+  error - Undefined name 'SupabaseService' - lib\shared\providers\active_modules_provider.dart:72:13 - undefined_identifier
+   info - Don't invoke 'print' in production code - lib\shared\services\nhost_service.dart:13:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\services\nhost_service.dart:18:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\services\nhost_service.dart:20:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\services\nhost_service.dart:36:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\services\nhost_service.dart:38:7 - avoid_print
+warning - Unused import: 'package:graphql_flutter/graphql_flutter.dart' - lib\shared\services\permission_service.dart:1:8 - unused_import
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\permission_service.dart:14:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\permission_service.dart:20:48 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\permission_service.dart:30:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\permission_service.dart:56:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\permission_service.dart:66:48 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\permission_service.dart:82:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\permission_service.dart:94:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\permission_service.dart:104:48 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\permission_service.dart:124:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\permission_service.dart:132:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\permission_service.dart:144:48 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\permission_service.dart:151:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\permission_service.dart:175:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\permission_service.dart:193:33 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\permission_service.dart:201:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\permission_service.dart:212:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\permission_service.dart:230:33 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\permission_service.dart:238:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\permission_service.dart:249:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\permission_service.dart:262:33 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\permission_service.dart:270:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\permission_service.dart:280:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\permission_service.dart:297:48 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\permission_service.dart:306:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:9:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:22:48 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\role_service.dart:29:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:37:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:53:48 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\role_service.dart:60:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:72:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:80:52 - undefined_getter
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:88:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:107:48 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\role_service.dart:117:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:125:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:147:48 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\role_service.dart:170:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:178:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:189:33 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\role_service.dart:197:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:213:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:221:52 - undefined_getter
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:229:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:248:48 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\role_service.dart:260:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:277:9 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:288:35 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\role_service.dart:297:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:305:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:313:33 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\role_service.dart:318:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:330:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:338:33 - undefined_getter
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:352:9 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:360:35 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\role_service.dart:366:7 - avoid_print
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:378:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:386:52 - undefined_getter
+   info - Use 'const' for final variables initialized to a constant value - lib\shared\services\role_service.dart:394:7 - prefer_const_declarations
+  error - The getter 'graphql' isn't defined for the type 'NhostClient' - lib\shared\services\role_service.dart:408:48 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\shared\services\role_service.dart:417:7 - avoid_print
+   info - Use 'const' with the constructor to improve performance - lib\shared\widgets\sidebar\adaptive_sidebar.dart:30:20 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\shared\widgets\sidebar\adaptive_sidebar.dart:31:25 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\shared\widgets\sidebar\adaptive_sidebar.dart:32:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\shared\widgets\sidebar\adaptive_sidebar.dart:38:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\shared\widgets\sidebar\adaptive_sidebar.dart:39:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\shared\widgets\sidebar\adaptive_sidebar.dart:41:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\shared\widgets\sidebar\adaptive_sidebar.dart:66:40 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\shared\widgets\sidebar\adaptive_sidebar.dart:67:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\shared\widgets\sidebar\adaptive_sidebar.dart:69:26 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\sidebar\adaptive_sidebar.dart:100:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\sidebar\adaptive_sidebar.dart:106:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\sidebar\adaptive_sidebar.dart:129:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\sidebar\adaptive_sidebar.dart:187:42 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\shared\widgets\sidebar\adaptive_sidebar.dart:204:26 - prefer_const_constructors
+
+flutter : 220 issues 
+found. (ran in 1.7s)
+At line:1 char:1
++ flutter analyze 
+lib --no-color 2>&1 
+| Out-File -FilePath 
+analyze.txt  ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (220 iss   
+ ues found. (ran     
+in 1.7s):String)     
+[], RemoteExcep    
+tion
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
