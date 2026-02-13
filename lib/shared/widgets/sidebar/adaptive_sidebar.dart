@@ -27,14 +27,14 @@ class AdaptiveSidebar extends ConsumerWidget {
           // App Header
           Container(
             padding: const EdgeInsets.all(AppConstants.spaceMd),
-            child: Row(
+            child: const Row(
               children: [
                 Icon(
                   Icons.dashboard_rounded,
                   color: AppColors.textOnDark,
                   size: 28,
                 ),
-                const SizedBox(width: AppConstants.spaceSm),
+                SizedBox(width: AppConstants.spaceSm),
                 Expanded(
                   child: Text(
                     AppConstants.appName,
@@ -63,7 +63,7 @@ class AdaptiveSidebar extends ConsumerWidget {
                   color: AppColors.textOnDark,
                 ),
               ),
-              error: (error, stack) => Center(
+              error: (error, stack) => const Center(
                 child: Text(
                   'Error loading modules',
                   style: TextStyle(color: AppColors.error),
@@ -209,7 +209,7 @@ class AdaptiveSidebar extends ConsumerWidget {
               Expanded(
                 child: Text(
                   label,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: AppColors.textOnDark,
                     fontSize: AppConstants.fontSizeBase,
                   ),

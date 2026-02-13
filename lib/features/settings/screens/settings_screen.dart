@@ -15,7 +15,7 @@ class SettingsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Settings',
               style: TextStyle(
                 fontSize: AppConstants.fontSizeXxl,
@@ -92,7 +92,7 @@ class _SettingsCard extends StatelessWidget {
                   children: [
                     Text(
                       title,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: AppConstants.fontSizeBase,
                         fontWeight: FontWeight.w600,
                         color: AppColors.textPrimary,
@@ -101,7 +101,7 @@ class _SettingsCard extends StatelessWidget {
                     const SizedBox(height: AppConstants.spaceXs),
                     Text(
                       description,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: AppConstants.fontSizeSm,
                         color: AppColors.textSecondary,
                       ),
@@ -109,7 +109,7 @@ class _SettingsCard extends StatelessWidget {
                   ],
                 ),
               ),
-              Icon(
+              const Icon(
                 Icons.chevron_right_rounded,
                 color: AppColors.textSecondary,
               ),

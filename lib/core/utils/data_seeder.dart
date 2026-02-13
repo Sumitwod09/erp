@@ -140,7 +140,7 @@ class DataSeeder {
       final businessResult = await NhostService.graphqlClient.mutate(
         MutationOptions(
           document: businessMutation,
-          variables: {'name': _businessName},
+          variables: const {'name': _businessName},
         ),
       );
 

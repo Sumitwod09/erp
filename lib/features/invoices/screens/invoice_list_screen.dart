@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_constants.dart';
-import '../../../shared/widgets/sidebar/adaptive_sidebar.dart';
 
 class InvoiceListScreen extends ConsumerWidget {
   const InvoiceListScreen({super.key});
@@ -44,7 +42,7 @@ class InvoiceListScreen extends ConsumerWidget {
               color: AppColors.textSecondary.withOpacity(0.5),
             ),
             const SizedBox(height: AppConstants.spaceMd),
-            Text(
+            const Text(
               'No invoices yet',
               style: TextStyle(
                 fontSize: AppConstants.fontSizeLg,
@@ -53,7 +51,7 @@ class InvoiceListScreen extends ConsumerWidget {
               ),
             ),
             const SizedBox(height: AppConstants.spaceSm),
-            Text(
+            const Text(
               'Create your first invoice to get started',
               style: TextStyle(
                 color: AppColors.textSecondary,

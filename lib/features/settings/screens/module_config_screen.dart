@@ -93,7 +93,7 @@ class _ModuleConfigScreenState extends ConsumerState<ModuleConfigScreen> {
                           ),
                           Text(
                             _module!.description ?? '',
-                            style: TextStyle(color: AppColors.textSecondary),
+                            style: const TextStyle(color: AppColors.textSecondary),
                           ),
                         ],
                       ),
@@ -122,9 +122,10 @@ class _ModuleConfigScreenState extends ConsumerState<ModuleConfigScreen> {
 
                 return Column(children: [
                   ...settings.entries.map((entry) {
-                    if (entry.value is! bool)
+                    if (entry.value is! bool) {
                       return const SizedBox
                           .shrink(); // Only bool toggles for now
+                    }
 
                     return Card(
                       margin:
@@ -132,7 +133,7 @@ class _ModuleConfigScreenState extends ConsumerState<ModuleConfigScreen> {
                       child: SwitchListTile(
                         title: Text(entry.key),
                         value: entry.value,
-                        activeColor: AppColors.actionBlue,
+                        activeThumbColor: AppColors.actionBlue,
                         onChanged: (val) {
                           final newSettings = {...settings, entry.key: val};
                           ref

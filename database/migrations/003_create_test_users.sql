@@ -1,19 +1,19 @@
 -- Test Users Setup Script
 -- This script creates test users for each role in the RBAC system
 -- 
--- IMPORTANT: Run this script AFTER creating the auth users in Supabase Dashboard
+-- IMPORTANT: Run this script AFTER creating the auth users in Nhost Dashboard
 -- or use the auth.users insert statements below (if you have admin privileges)
 
 -- ============================================================================
 -- OPTION 1: Manual Auth User Creation (Recommended for Production)
 -- ============================================================================
--- Go to Supabase Dashboard → Authentication → Users → Add User
+-- Go to Nhost Dashboard → Users → Add User
 -- Create users with these credentials, then run the UPDATE statements below
 
 -- ============================================================================
 -- OPTION 2: Direct Auth User Creation (Development/Testing Only)
 -- ============================================================================
--- NOTE: This requires superuser access and may not work in all Supabase setups
+-- NOTE: This requires superuser access and may not work in all Nhost setups
 -- The password 'Test123!' will be hashed automatically
 
 -- First, we need to get the business_id for test users

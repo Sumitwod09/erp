@@ -20,7 +20,7 @@ class LedgerScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   'Accounting Ledger',
                   style: TextStyle(
                     fontSize: AppConstants.fontSizeXxl,
@@ -72,7 +72,7 @@ class LedgerScreen extends StatelessWidget {
             const SizedBox(height: AppConstants.spaceMd),
 
             // Permission guard example
-            PermissionGuard(
+            const PermissionGuard(
               permission: PermissionNames.accountingRead,
               showFallback: true,
               fallback: Center(
@@ -84,7 +84,7 @@ class LedgerScreen extends StatelessWidget {
                       size: 64,
                       color: AppColors.textSecondary,
                     ),
-                    const SizedBox(height: AppConstants.spaceMd),
+                    SizedBox(height: AppConstants.spaceMd),
                     Text(
                       'Access Denied',
                       style: TextStyle(
@@ -93,7 +93,7 @@ class LedgerScreen extends StatelessWidget {
                         color: AppColors.textPrimary,
                       ),
                     ),
-                    const SizedBox(height: AppConstants.spaceSm),
+                    SizedBox(height: AppConstants.spaceSm),
                     Text(
                       'You do not have permission to view accounting records.',
                       style: TextStyle(

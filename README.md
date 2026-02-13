@@ -37,9 +37,15 @@ A comprehensive ERP solution built with Flutter and Nhost.
     NHOST_REGION=your_region
     ```
 
-4.  **Database Migration (Important):**
-    
-    To enable all features (like module configuration), you must apply the database migrations found in `supabase/migrations/` to your Nhost database.
+4.  **Setup Database (Nhost)**:
+    -   Create a new project on [Nhost](https://nhost.io/).
+    -   Go to the **Database** section in Nhost dashboard.
+    -   Run the SQL scripts located in `database/migrations/` in order:
+        -   `001_initial_schema.sql`
+        -   `002_rbac_schema.sql`
+        -   `003_create_test_users.sql` (Optional: for test data)
+        -   `004_add_module_settings.sql`
+        -   `005_create_inventory_table.sql`
 
 ## Running on Desktop
 

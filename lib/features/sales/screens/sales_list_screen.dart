@@ -17,7 +17,7 @@ class SalesListScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   'Sales & Invoicing',
                   style: TextStyle(
                     fontSize: AppConstants.fontSizeXxl,
@@ -35,7 +35,7 @@ class SalesListScreen extends StatelessWidget {
               ],
             ),
             const SizedBox(height: AppConstants.spaceMd),
-            Expanded(
+            const Expanded(
               child: Center(
                 child: Text(
                   'Sales module coming soon',

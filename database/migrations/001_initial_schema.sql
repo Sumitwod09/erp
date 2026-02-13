@@ -8,7 +8,7 @@ create table if not exists public.businesses (
   updated_at timestamptz default now()
 );
 
--- Create users table (extends Supabase auth.users)
+-- Create users table (extends Nhost Auth users)
 create table if not exists public.users (
   id uuid primary key references auth.users(id) on delete cascade,
   email text not null,

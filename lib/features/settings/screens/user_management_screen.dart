@@ -239,7 +239,7 @@ class _ChangeRoleDialogState extends State<_ChangeRoleDialog> {
                 setState(() => _selectedRole = value);
               },
             );
-          }).toList(),
+          }),
         ],
       ),
       actions: [

@@ -44,12 +44,12 @@ class _ModuleManagementScreenState
 
           return Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(AppConstants.spaceLg),
+              const Padding(
+                padding: EdgeInsets.all(AppConstants.spaceLg),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       'Customize Your Modules',
                       style: TextStyle(
                         fontSize: AppConstants.fontSizeXl,
@@ -57,8 +57,8 @@ class _ModuleManagementScreenState
                         color: AppColors.textPrimary,
                       ),
                     ),
-                    const SizedBox(height: AppConstants.spaceSm),
-                    const Text(
+                    SizedBox(height: AppConstants.spaceSm),
+                    Text(
                       'Enable modules to access features. Disabled modules are hidden from your workspace.',
                       style: TextStyle(
                         fontSize: AppConstants.fontSizeBase,
@@ -135,7 +135,7 @@ class _ModuleManagementScreenState
                       ),
                       Text(
                         module.category,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: AppConstants.fontSizeSm,
                           color: AppColors.textSecondary,
                         ),
@@ -145,7 +145,7 @@ class _ModuleManagementScreenState
                 ),
                 Switch(
                   value: isActive,
-                  activeColor: AppColors.actionBlue,
+                  activeThumbColor: AppColors.actionBlue,
                   onChanged: _isProcessing
                       ? null
                       : (val) => _toggleModule(module.name, val),

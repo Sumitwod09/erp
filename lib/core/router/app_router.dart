@@ -13,8 +13,6 @@ import '../../features/accounting/screens/ledger_screen.dart';
 import '../../features/sales/screens/sales_list_screen.dart';
 import '../../features/settings/screens/module_management_screen.dart';
 import '../../features/settings/screens/settings_screen.dart';
-import '../../features/settings/screens/module_management_screen.dart';
-import '../../features/settings/screens/settings_screen.dart';
 import '../../features/settings/screens/module_config_screen.dart';
 import '../../features/business/screens/business_profile_screen.dart';
 import '../../features/invoices/screens/invoice_list_screen.dart';

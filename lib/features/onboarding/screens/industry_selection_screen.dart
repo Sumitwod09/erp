@@ -18,7 +18,7 @@ class IndustrySelectionScreen extends ConsumerWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text(
+              const Text(
                 'Select Your Industry',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -28,7 +28,7 @@ class IndustrySelectionScreen extends ConsumerWidget {
                 ),
               ),
               const SizedBox(height: AppConstants.spaceSm),
-              Text(
+              const Text(
                 'Choose your industry to activate preset modules',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -49,7 +49,7 @@ class IndustrySelectionScreen extends ConsumerWidget {
                       title: 'Retail',
                       description: 'Point of sale and retail operations',
                       icon: Icons.store_rounded,
-                      modules: [
+                      modules: const [
                         'Inventory',
                         'Sales',
                         'Accounting',
@@ -61,14 +61,14 @@ class IndustrySelectionScreen extends ConsumerWidget {
                       title: 'Pharmaceutical',
                       description: 'Pharmacy with batch tracking',
                       icon: Icons.local_pharmacy_rounded,
-                      modules: ['Inventory', 'Sales', 'Accounting'],
+                      modules: const ['Inventory', 'Sales', 'Accounting'],
                       onSelect: () => _selectIndustry(context, ref, 'pharma'),
                     ),
                     _IndustryCard(
                       title: 'Warehouse & Logistics',
                       description: 'Warehouse management and dispatch',
                       icon: Icons.warehouse_rounded,
-                      modules: ['Inventory'],
+                      modules: const ['Inventory'],
                       onSelect: () =>
                           _selectIndustry(context, ref, 'warehouse'),
                     ),
@@ -76,7 +76,7 @@ class IndustrySelectionScreen extends ConsumerWidget {
                       title: 'Manufacturing',
                       description: 'Production and materials management',
                       icon: Icons.factory_rounded,
-                      modules: ['Inventory', 'Accounting'],
+                      modules: const ['Inventory', 'Accounting'],
                       onSelect: () =>
                           _selectIndustry(context, ref, 'manufacturing'),
                     ),
@@ -144,7 +144,7 @@ class _IndustryCard extends StatelessWidget {
               const SizedBox(height: AppConstants.spaceSm),
               Text(
                 title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: AppConstants.fontSizeLg,
                   fontWeight: FontWeight.bold,
                   color: AppColors.textPrimary,
@@ -153,13 +153,13 @@ class _IndustryCard extends StatelessWidget {
               const SizedBox(height: AppConstants.spaceXs),
               Text(
                 description,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: AppConstants.fontSizeSm,
                   color: AppColors.textSecondary,
                 ),
               ),
               const Spacer(),
-              Text(
+              const Text(
                 'Includes:',
                 style: TextStyle(
                   fontSize: AppConstants.fontSizeSm,
@@ -172,7 +172,7 @@ class _IndustryCard extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 2),
                     child: Text(
                       '• $module',
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: AppConstants.fontSizeSm,
                         color: AppColors.textSecondary,
                       ),

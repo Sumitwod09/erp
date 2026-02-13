@@ -84,13 +84,13 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           // Icon and Title
-          Icon(
+          const Icon(
             Icons.lock_reset_rounded,
             size: 48,
             color: AppColors.actionBlue,
           ),
           const SizedBox(height: AppConstants.spaceMd),
-          Text(
+          const Text(
             'Reset Password',
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -100,7 +100,7 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
             ),
           ),
           const SizedBox(height: AppConstants.spaceXs),
-          Text(
+          const Text(
             'Enter your email to receive a password reset link',
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -113,7 +113,7 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
           // Email Field
           TextFormField(
             controller: _emailController,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               labelText: 'Email',
               prefixIcon: Icon(Icons.email_outlined),
             ),
@@ -164,13 +164,13 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Icon(
+        const Icon(
           Icons.check_circle_outline_rounded,
           size: 64,
           color: AppColors.success,
         ),
         const SizedBox(height: AppConstants.spaceMd),
-        Text(
+        const Text(
           'Email Sent!',
           style: TextStyle(
             fontSize: AppConstants.fontSizeXl,
@@ -179,7 +179,7 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
           ),
         ),
         const SizedBox(height: AppConstants.spaceSm),
-        Text(
+        const Text(
           'Check your email for a password reset link',
           textAlign: TextAlign.center,
           style: TextStyle(

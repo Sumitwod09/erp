@@ -15,7 +15,7 @@ class DashboardScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Header
-            Text(
+            const Text(
               'Dashboard',
               style: TextStyle(
                 fontSize: AppConstants.fontSizeXxl,
@@ -37,7 +37,7 @@ class DashboardScreen extends StatelessWidget {
                       color: AppColors.actionBlue.withOpacity(0.5),
                     ),
                     const SizedBox(height: AppConstants.spaceMd),
-                    Text(
+                    const Text(
                       'Welcome to Lumiere ERP',
                       style: TextStyle(
                         fontSize: AppConstants.fontSizeLg,
@@ -46,7 +46,7 @@ class DashboardScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: AppConstants.spaceSm),
-                    Text(
+                    const Text(
                       'Configure your modules in Settings to get started',
                       style: TextStyle(
                         fontSize: AppConstants.fontSizeBase,

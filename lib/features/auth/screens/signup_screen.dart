@@ -90,13 +90,13 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   // Logo and Title
-                  Icon(
+                  const Icon(
                     Icons.dashboard_rounded,
                     size: 48,
                     color: AppColors.actionBlue,
                   ),
                   const SizedBox(height: AppConstants.spaceMd),
-                  Text(
+                  const Text(
                     'Create Your Account',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -106,7 +106,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                     ),
                   ),
                   const SizedBox(height: AppConstants.spaceXs),
-                  Text(
+                  const Text(
                     'Start your ERP journey',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -119,7 +119,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                   // Full Name Field
                   TextFormField(
                     controller: _fullNameController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Full Name',
                       prefixIcon: Icon(Icons.person_outlined),
                     ),
@@ -135,7 +135,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                   // Business Name Field
                   TextFormField(
                     controller: _businessNameController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Business Name',
                       prefixIcon: Icon(Icons.business_outlined),
                     ),
@@ -151,7 +151,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                   // Email Field
                   TextFormField(
                     controller: _emailController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Email',
                       prefixIcon: Icon(Icons.email_outlined),
                     ),
@@ -173,7 +173,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                     controller: _passwordController,
                     decoration: InputDecoration(
                       labelText: 'Password',
-                      prefixIcon: Icon(Icons.lock_outlined),
+                      prefixIcon: const Icon(Icons.lock_outlined),
                       suffixIcon: IconButton(
                         icon: Icon(
                           _obscurePassword
@@ -205,7 +205,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                     controller: _confirmPasswordController,
                     decoration: InputDecoration(
                       labelText: 'Confirm Password',
-                      prefixIcon: Icon(Icons.lock_outlined),
+                      prefixIcon: const Icon(Icons.lock_outlined),
                       suffixIcon: IconButton(
                         icon: Icon(
                           _obscureConfirmPassword
@@ -256,7 +256,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         'Already have an account? ',
                         style: TextStyle(
                           fontSize: AppConstants.fontSizeBase,

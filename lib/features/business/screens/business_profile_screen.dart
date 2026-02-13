@@ -73,8 +73,9 @@ class _BusinessProfileScreenState extends ConsumerState<BusinessProfileScreen> {
         ),
       );
 
-      if (userResult.hasException)
+      if (userResult.hasException) {
         throw Exception(userResult.exception.toString());
+      }
 
       final businessId =
           userResult.data?['${AppConstants.usersTable}_by_pk']['business_id'];
@@ -102,8 +103,9 @@ class _BusinessProfileScreenState extends ConsumerState<BusinessProfileScreen> {
         ),
       );
 
-      if (businessResult.hasException)
+      if (businessResult.hasException) {
         throw Exception(businessResult.exception.toString());
+      }
 
       final businessData =
           businessResult.data?['${AppConstants.businessesTable}_by_pk'];

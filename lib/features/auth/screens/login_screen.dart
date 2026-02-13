@@ -142,13 +142,13 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   // Logo and Title
-                  Icon(
+                  const Icon(
                     Icons.dashboard_rounded,
                     size: 48,
                     color: AppColors.actionBlue,
                   ),
                   const SizedBox(height: AppConstants.spaceMd),
-                  Text(
+                  const Text(
                     AppConstants.appName,
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -158,7 +158,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                     ),
                   ),
                   const SizedBox(height: AppConstants.spaceXs),
-                  Text(
+                  const Text(
                     'Sign in to your account',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -171,7 +171,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   // Email Field
                   TextFormField(
                     controller: _emailController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Email',
                       prefixIcon: Icon(Icons.email_outlined),
                     ),
@@ -193,7 +193,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                     controller: _passwordController,
                     decoration: InputDecoration(
                       labelText: 'Password',
-                      prefixIcon: Icon(Icons.lock_outlined),
+                      prefixIcon: const Icon(Icons.lock_outlined),
                       suffixIcon: IconButton(
                         icon: Icon(
                           _obscurePassword
@@ -223,7 +223,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                     alignment: Alignment.centerRight,
                     child: TextButton(
                       onPressed: () => context.go('/forgot-password'),
-                      child: Text(
+                      child: const Text(
                         'Forgot Password?',
                         style: TextStyle(fontSize: AppConstants.fontSizeSm),
                       ),
@@ -256,7 +256,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         'Don\'t have an account? ',
                         style: TextStyle(
                           fontSize: AppConstants.fontSizeBase,
@@ -279,7 +279,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                       label: const Text('Seed Test Users'),
                       style: TextButton.styleFrom(
                         foregroundColor: AppColors.textSecondary,
-                        textStyle: TextStyle(fontSize: AppConstants.fontSizeSm),
+                        textStyle: const TextStyle(fontSize: AppConstants.fontSizeSm),
                       ),
                     ),
                   ],

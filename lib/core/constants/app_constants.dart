@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 /// Core application constants
 class AppConstants {
   // App Information
@@ -21,6 +23,20 @@ class AppConstants {
   static const double spaceLg = 24.0;
   static const double spaceXl = 32.0;
   static const double spaceXxl = 48.0;
+
+  // Border Radius
+  static const double radiusSm = 4.0;
+  static const double radiusMd = 8.0;
+  static const double radiusLg = 16.0;
+
+  // Shadows
+  static const List<BoxShadow> shadowSm = [
+    BoxShadow(
+      color: Color(0x1A000000),
+      offset: Offset(0, 1),
+      blurRadius: 3,
+    ),
+  ];
 
   // Typography
   static const double fontSizeBase = 14.0;

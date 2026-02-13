@@ -1,6 +1,4 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:nhost_flutter_auth/nhost_flutter_auth.dart';
 import 'package:nhost_sdk/nhost_sdk.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 import '../../../shared/services/nhost_service.dart';
