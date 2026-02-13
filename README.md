@@ -1,16 +1,87 @@
-# erp_desktop
+# ERP Desktop Application
 
-A new Flutter project.
+A comprehensive ERP solution built with Flutter and Nhost.
+
+## Prerequisites
+
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- [Git](https://git-scm.com/)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1.  **Clone the repository:**
 
-A few resources to get you started if this is your first Flutter project:
+    ```bash
+    git clone https://github.com/Sumitwod09/erp.git
+    cd erp
+    ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2.  **Install dependencies:**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    ```bash
+    flutter pub get
+    ```
+
+3.  **Configuration:**
+
+    Create a `.env` file in the root directory by copying `.env.example`:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+    Open `.env` and configure your Nhost project details:
+
+    ```env
+    NHOST_SUBDOMAIN=your_subdomain
+    NHOST_REGION=your_region
+    ```
+
+4.  **Database Migration (Important):**
+    
+    To enable all features (like module configuration), you must apply the database migrations found in `supabase/migrations/` to your Nhost database.
+
+## Running on Desktop
+
+### Windows
+
+Enable desktop support (if not already enabled):
+```bash
+flutter config --enable-windows-desktop
+```
+
+Run the application:
+```bash
+flutter run -d windows
+```
+
+### macOS
+
+Enable desktop support:
+```bash
+flutter config --enable-macos-desktop
+```
+
+Run the application:
+```bash
+flutter run -d macos
+```
+
+### Linux
+
+Enable desktop support:
+```bash
+flutter config --enable-linux-desktop
+```
+
+Run the application:
+```bash
+flutter run -d linux
+```
+
+## Features
+
+- **Authentication**: Secure login and signup powered by Nhost.
+- **Role-Based Access Control (RBAC)**: Manage user roles and permissions.
+- **Module Management**: flexible module system (Inventory, Sales, Accounting, etc.) with customizable settings.
+- **Desktop Optimized**: Responsive sidebar navigation and data tables.
