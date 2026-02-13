@@ -1,0 +1,5 @@
+﻿Analyzing erp_desktop...                                        
+
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\settings\screens\user_management_screen.dart:237:15 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\settings\screens\user_management_screen.dart:238:15 - deprecated_member_use
+

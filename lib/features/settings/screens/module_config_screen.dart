@@ -75,7 +75,7 @@ class _ModuleConfigScreenState extends ConsumerState<ModuleConfigScreen> {
                     Container(
                       padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
-                        color: AppColors.actionBlue.withOpacity(0.1),
+                        color: AppColors.actionBlue.withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Icon(_getIconData(_module!.icon),
@@ -93,7 +93,8 @@ class _ModuleConfigScreenState extends ConsumerState<ModuleConfigScreen> {
                           ),
                           Text(
                             _module!.description ?? '',
-                            style: const TextStyle(color: AppColors.textSecondary),
+                            style:
+                                const TextStyle(color: AppColors.textSecondary),
                           ),
                         ],
                       ),

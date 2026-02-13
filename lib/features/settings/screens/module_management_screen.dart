@@ -18,8 +18,6 @@ class ModuleManagementScreen extends ConsumerStatefulWidget {
 class _ModuleManagementScreenState
     extends ConsumerState<ModuleManagementScreen> {
   final List<ModuleModel> _allModules = ModuleService.getSystemModules();
-  // We'll track local toggles to optimize UI, but the source of truth is the provider
-  final Map<String, bool> _pendingToggles = {};
   bool _isProcessing = false;
 
   @override
@@ -112,8 +110,8 @@ class _ModuleManagementScreenState
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
                     color: isActive
-                        ? AppColors.actionBlue.withOpacity(0.1)
-                        : Colors.grey.withOpacity(0.1),
+                        ? AppColors.actionBlue.withValues(alpha: 0.1)
+                        : Colors.grey.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Icon(
@@ -168,7 +166,7 @@ class _ModuleManagementScreenState
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
                 fontSize: AppConstants.fontSizeSm,
-                color: AppColors.textPrimary.withOpacity(0.8),
+                color: AppColors.textPrimary.withValues(alpha: 0.8),
               ),
             ),
           ],

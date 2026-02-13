@@ -99,8 +99,8 @@ class InventoryListScreen extends ConsumerWidget {
                       child: SizedBox(
                         width: double.infinity,
                         child: DataTable(
-                          headingRowColor: MaterialStateProperty.all(
-                              AppColors.surface.withOpacity(0.5)),
+                          headingRowColor: WidgetStateProperty.all(
+                              AppColors.surface.withValues(alpha: 0.5)),
                           columns: const [
                             DataColumn(label: Text('Name')),
                             DataColumn(label: Text('SKU')),

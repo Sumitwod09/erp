@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../../../shared/services/nhost_service.dart';
@@ -59,7 +60,7 @@ class InventoryItems extends _$InventoryItems {
           .map((json) => InventoryItem.fromJson(json as Map<String, dynamic>))
           .toList();
     } catch (e) {
-      print('Error fetching inventory items: $e');
+      debugPrint('Error fetching inventory items: $e');
       return [];
     }
   }
@@ -115,7 +116,7 @@ class InventoryItems extends _$InventoryItems {
       // Refresh list
       ref.invalidateSelf();
     } catch (e) {
-      print('Error adding inventory item: $e');
+      debugPrint('Error adding inventory item: $e');
       rethrow;
     }
   }
@@ -146,7 +147,7 @@ class InventoryItems extends _$InventoryItems {
 
       ref.invalidateSelf();
     } catch (e) {
-      print('Error updating inventory item: $e');
+      debugPrint('Error updating inventory item: $e');
       rethrow;
     }
   }
@@ -174,7 +175,7 @@ class InventoryItems extends _$InventoryItems {
 
       ref.invalidateSelf();
     } catch (e) {
-      print('Error deleting inventory item: $e');
+      debugPrint('Error deleting inventory item: $e');
       rethrow;
     }
   }

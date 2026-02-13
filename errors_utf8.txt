@@ -1,0 +1,66 @@
+﻿Analyzing erp_desktop...                                        
+
+  error - Target of URI hasn't been generated: 'package:erp_desktop/features/accounting/providers/ledger_provider.g.dart' - lib\features\accounting\providers\ledger_provider.dart:6:6 - uri_has_not_been_generated
+warning - The method doesn't override an inherited method - lib\features\accounting\providers\ledger_provider.dart:11:29 - override_on_non_overriding_member
+   info - Don't invoke 'print' in production code - lib\features\accounting\providers\ledger_provider.dart:47:7 - avoid_print
+  error - Undefined name 'ref' - lib\features\accounting\providers\ledger_provider.dart:96:7 - undefined_identifier
+   info - Don't invoke 'print' in production code - lib\features\accounting\providers\ledger_provider.dart:98:7 - avoid_print
+  error - Undefined name 'ledgerProvider' - lib\features\accounting\screens\ledger_screen.dart:23:35 - undefined_identifier
+   info - Statements in an if should be enclosed in a block - lib\features\accounting\screens\ledger_screen.dart:159:15 - curly_braces_in_flow_control_structures
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\screens\forgot_password_screen.dart:67:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\screens\login_screen.dart:132:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\screens\signup_screen.dart:80:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\business\screens\business_profile_screen.dart:231:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\screens\dashboard_screen.dart:37:51 - deprecated_member_use
+   info - Don't invoke 'print' in production code - lib\features\inventory\providers\inventory_provider.dart:62:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\inventory\providers\inventory_provider.dart:118:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\inventory\providers\inventory_provider.dart:149:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\inventory\providers\inventory_provider.dart:177:7 - avoid_print
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\inventory\screens\inventory_list_screen.dart:103:49 - deprecated_member_use
+  error - Target of URI hasn't been generated: 'package:erp_desktop/features/invoices/providers/invoice_provider.g.dart' - lib\features\invoices\providers\invoice_provider.dart:6:6 - uri_has_not_been_generated
+warning - The method doesn't override an inherited method - lib\features\invoices\providers\invoice_provider.dart:11:25 - override_on_non_overriding_member
+   info - Don't invoke 'print' in production code - lib\features\invoices\providers\invoice_provider.dart:47:7 - avoid_print
+  error - Undefined name 'ref' - lib\features\invoices\providers\invoice_provider.dart:94:7 - undefined_identifier
+   info - Don't invoke 'print' in production code - lib\features\invoices\providers\invoice_provider.dart:96:7 - avoid_print
+  error - Undefined name 'ref' - lib\features\invoices\providers\invoice_provider.dart:122:7 - undefined_identifier
+   info - Don't invoke 'print' in production code - lib\features\invoices\providers\invoice_provider.dart:124:7 - avoid_print
+  error - Undefined name 'invoicesProvider' - lib\features\invoices\screens\generate_invoice_screen.dart:50:22 - undefined_identifier
+  error - Undefined name 'salesProvider' - lib\features\invoices\screens\generate_invoice_screen.dart:77:34 - undefined_identifier
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\invoices\screens\generate_invoice_screen.dart:124:25 - deprecated_member_use
+  error - Undefined name 'invoicesProvider' - lib\features\invoices\screens\invoice_list_screen.dart:20:37 - undefined_identifier
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\invoices\screens\invoice_list_screen.dart:71:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\invoices\screens\invoice_list_screen.dart:174:22 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\invoices\screens\invoice_list_screen.dart:200:22 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\invoices\screens\invoice_list_screen.dart:202:41 - deprecated_member_use
+  error - Target of URI hasn't been generated: 'package:erp_desktop/features/sales/providers/sales_provider.g.dart' - lib\features\sales\providers\sales_provider.dart:7:6 - uri_has_not_been_generated
+warning - The method doesn't override an inherited method - lib\features\sales\providers\sales_provider.dart:12:22 - override_on_non_overriding_member
+   info - Don't invoke 'print' in production code - lib\features\sales\providers\sales_provider.dart:56:7 - avoid_print
+  error - Undefined name 'ref' - lib\features\sales\providers\sales_provider.dart:106:7 - undefined_identifier
+  error - Undefined name 'ref' - lib\features\sales\providers\sales_provider.dart:107:7 - undefined_identifier
+   info - Don't invoke 'print' in production code - lib\features\sales\providers\sales_provider.dart:109:7 - avoid_print
+  error - Undefined name 'salesProvider' - lib\features\sales\screens\new_sale_screen.dart:63:22 - undefined_identifier
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\sales\screens\new_sale_screen.dart:193:19 - deprecated_member_use
+  error - Undefined name 'salesProvider' - lib\features\sales\screens\sales_list_screen.dart:14:34 - undefined_identifier
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\sales\screens\sales_list_screen.dart:138:32 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\sales\screens\sales_list_screen.dart:240:22 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\sales\screens\sales_list_screen.dart:242:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\settings\screens\module_config_screen.dart:78:53 - deprecated_member_use
+warning - The value of the field '_pendingToggles' isn't used - lib\features\settings\screens\module_management_screen.dart:22:27 - unused_field
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\settings\screens\module_management_screen.dart:115:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\settings\screens\module_management_screen.dart:116:39 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\settings\screens\module_management_screen.dart:171:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\settings\screens\settings_screen.dart:79:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\settings\screens\user_management_screen.dart:134:59 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\settings\screens\user_management_screen.dart:237:15 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\settings\screens\user_management_screen.dart:238:15 - deprecated_member_use
+   info - Don't invoke 'print' in production code - lib\shared\providers\active_modules_provider.dart:51:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\providers\active_modules_provider.dart:82:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\providers\active_modules_provider.dart:110:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\providers\active_modules_provider.dart:159:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\providers\module_settings_provider.dart:58:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\providers\module_settings_provider.dart:124:7 - avoid_print
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\sidebar\adaptive_sidebar.dart:108:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\sidebar\adaptive_sidebar.dart:114:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\sidebar\adaptive_sidebar.dart:137:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\sidebar\adaptive_sidebar.dart:195:42 - deprecated_member_use
+

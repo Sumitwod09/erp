@@ -38,10 +38,16 @@ class NhostService {
       );
 
       // Initialize GraphQL client
-      final graphQLEndpoint = 'https://$nhostSubdomain.nhost.run/v1/graphql';
+      final graphQLEndpoint =
+          'https://$nhostSubdomain.$nhostRegion.nhost.run/v1/graphql';
+
+      final httpLink = HttpLink(graphQLEndpoint);
+      final authLink = AuthLink(
+        getToken: () async => 'Bearer ${_client?.auth.accessToken}',
+      );
 
       _graphqlClient = GraphQLClient(
-        link: HttpLink(graphQLEndpoint),
+        link: authLink.concat(httpLink),
         cache: GraphQLCache(),
       );
 

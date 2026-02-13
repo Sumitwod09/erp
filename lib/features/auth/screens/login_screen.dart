@@ -129,7 +129,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               borderRadius: BorderRadius.circular(8),
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.deepNavy.withOpacity(0.1),
+                  color: AppColors.deepNavy.withValues(alpha: 0.1),
                   blurRadius: 20,
                   offset: const Offset(0, 4),
                 ),
@@ -279,7 +279,8 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                       label: const Text('Seed Test Users'),
                       style: TextButton.styleFrom(
                         foregroundColor: AppColors.textSecondary,
-                        textStyle: const TextStyle(fontSize: AppConstants.fontSizeSm),
+                        textStyle:
+                            const TextStyle(fontSize: AppConstants.fontSizeSm),
                       ),
                     ),
                   ],

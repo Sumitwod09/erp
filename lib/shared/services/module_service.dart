@@ -76,23 +76,36 @@ class ModuleService {
     final user = NhostService.currentUser;
     if (user == null) throw Exception('User not authenticated');
 
-    // Get Business ID
+    // Get Business ID using a standard query (more reliable than _by_pk with RLS)
     final userQuery = gql('''
       query GetBusinessId(\$id: uuid!) {
-        ${AppConstants.usersTable}_by_pk(id: \$id) {
+        ${AppConstants.usersTable}(where: {id: {_eq: \$id}}) {
           business_id
         }
       }
     ''');
 
     final userResult = await NhostService.graphqlClient.query(
-      QueryOptions(document: userQuery, variables: {'id': user.id}),
+      QueryOptions(
+        document: userQuery,
+        variables: {'id': user.id},
+        fetchPolicy: FetchPolicy.noCache,
+      ),
     );
 
-    final businessId =
-        userResult.data?['${AppConstants.usersTable}_by_pk']['business_id'];
+    if (userResult.hasException) {
+      throw Exception('Database error: ${userResult.exception}');
+    }
 
-    if (businessId == null) throw Exception('No business found for user');
+    final users = userResult.data?['${AppConstants.usersTable}'] as List?;
+    if (users == null || users.isEmpty) {
+      throw Exception(
+          'No profile found for user ${user.id} in public.users table');
+    }
+
+    final businessId = users.first['business_id'];
+    if (businessId == null)
+      throw Exception('No business associated with your user profile');
 
     // Upsert subscription
     // If it exists, update is_active. If not, insert it.
@@ -106,8 +119,8 @@ class ModuleService {
             activated_at: "now()"
           },
           on_conflict: {
-            constraint: ${AppConstants.businessSubscriptionsTable}_pkey,
-            update_columns: [is_active]
+            constraint: business_subscriptions_business_id_module_name_key,
+            update_columns: [is_active, activated_at]
           }
         ) {
           id

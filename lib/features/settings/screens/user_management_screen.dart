@@ -130,8 +130,8 @@ class _UserManagementScreenState extends ConsumerState<UserManagementScreen> {
                           children: [
                             Chip(
                               label: Text(_getRoleDisplayName(roleName)),
-                              backgroundColor:
-                                  _getRoleColor(roleName).withOpacity(0.2),
+                              backgroundColor: _getRoleColor(roleName)
+                                  .withValues(alpha: 0.2),
                             ),
                             const SizedBox(width: AppConstants.spaceSm),
                             IconButton(

@@ -1,0 +1,24 @@
+﻿Analyzing erp_desktop...                                        
+
+   info - Don't invoke 'print' in production code - lib\features\accounting\providers\ledger_provider.dart:47:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\accounting\providers\ledger_provider.dart:98:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\inventory\providers\inventory_provider.dart:62:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\inventory\providers\inventory_provider.dart:118:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\inventory\providers\inventory_provider.dart:149:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\inventory\providers\inventory_provider.dart:177:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\invoices\providers\invoice_provider.dart:47:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\invoices\providers\invoice_provider.dart:96:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\invoices\providers\invoice_provider.dart:124:7 - avoid_print
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\invoices\screens\generate_invoice_screen.dart:124:25 - deprecated_member_use
+   info - Don't invoke 'print' in production code - lib\features\sales\providers\sales_provider.dart:56:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\sales\providers\sales_provider.dart:109:7 - avoid_print
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\sales\screens\new_sale_screen.dart:193:19 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\settings\screens\user_management_screen.dart:237:15 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\settings\screens\user_management_screen.dart:238:15 - deprecated_member_use
+   info - Don't invoke 'print' in production code - lib\shared\providers\active_modules_provider.dart:51:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\providers\active_modules_provider.dart:82:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\providers\active_modules_provider.dart:110:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\providers\active_modules_provider.dart:159:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\providers\module_settings_provider.dart:58:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\shared\providers\module_settings_provider.dart:124:7 - avoid_print
+

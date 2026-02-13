@@ -76,7 +76,7 @@ class _SettingsCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(AppConstants.spaceSm),
                 decoration: BoxDecoration(
-                  color: AppColors.actionBlue.withOpacity(0.1),
+                  color: AppColors.actionBlue.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: Icon(

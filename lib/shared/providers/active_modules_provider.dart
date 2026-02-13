@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 import '../services/nhost_service.dart';
@@ -48,7 +49,7 @@ class ActiveModules extends _$ActiveModules {
       );
 
       if (result.hasException) {
-        print('GraphQL error: ${result.exception}');
+        debugPrint('GraphQL error: ${result.exception}');
         return [];
       }
 
@@ -79,7 +80,7 @@ class ActiveModules extends _$ActiveModules {
           .whereType<ModuleModel>()
           .toList();
     } catch (e) {
-      print('Error loading active modules: $e');
+      debugPrint('Error loading active modules: $e');
       return [];
     }
   }
@@ -103,19 +104,20 @@ class ActiveModules extends _$ActiveModules {
         QueryOptions(
           document: userQueryDoc,
           variables: {'userId': user.id},
+          fetchPolicy: FetchPolicy.noCache,
         ),
       );
 
       if (userResult.hasException) {
-        print('GraphQL error getting user: ${userResult.exception}');
+        debugPrint('GraphQL error getting user: ${userResult.exception}');
         return;
       }
 
-      final userData = userResult.data;
-      if (userData == null) return;
+      final data = userResult.data;
+      if (data == null) return;
 
       final List<dynamic> users =
-          userData[AppConstants.usersTable] as List<dynamic>;
+          data[AppConstants.usersTable] as List<dynamic>;
       if (users.isEmpty) return;
 
       final businessId = users.first['business_id'] as String;
@@ -131,7 +133,7 @@ class ActiveModules extends _$ActiveModules {
               activated_at: \$activatedAt
             },
             on_conflict: {
-              constraint: ${AppConstants.businessSubscriptionsTable}_pkey,
+              constraint: business_subscriptions_business_id_module_name_key,
               update_columns: [is_active, activated_at]
             }
           ) {
@@ -156,7 +158,7 @@ class ActiveModules extends _$ActiveModules {
       // Manually refresh the state
       ref.invalidateSelf();
     } catch (e) {
-      print('Error toggling module: $e');
+      debugPrint('Error toggling module: $e');
     }
   }
 }

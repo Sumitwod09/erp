@@ -105,13 +105,13 @@ class AdaptiveSidebar extends ConsumerWidget {
                     Icon(
                       Icons.person,
                       size: 16,
-                      color: AppColors.textOnDark.withOpacity(0.7),
+                      color: AppColors.textOnDark.withValues(alpha: 0.7),
                     ),
                     const SizedBox(width: 4),
                     Text(
                       roleName,
                       style: TextStyle(
-                        color: AppColors.textOnDark.withOpacity(0.7),
+                        color: AppColors.textOnDark.withValues(alpha: 0.7),
                         fontSize: AppConstants.fontSizeSm,
                       ),
                     ),
@@ -134,7 +134,7 @@ class AdaptiveSidebar extends ConsumerWidget {
             'No modules active.\nConfigure modules in Settings.',
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: AppColors.textOnDark.withOpacity(0.7),
+              color: AppColors.textOnDark.withValues(alpha: 0.7),
               fontSize: AppConstants.fontSizeSm,
             ),
           ),
@@ -192,7 +192,7 @@ class AdaptiveSidebar extends ConsumerWidget {
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
-        hoverColor: AppColors.actionBlue.withOpacity(0.2),
+        hoverColor: AppColors.actionBlue.withValues(alpha: 0.2),
         child: Container(
           padding: const EdgeInsets.symmetric(
             horizontal: AppConstants.spaceMd,

@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../../core/constants/app_constants.dart';
@@ -55,7 +56,7 @@ class ModuleSettings extends _$ModuleSettings {
       final settings = subscriptions.first['settings'];
       return settings != null ? Map<String, dynamic>.from(settings) : {};
     } catch (e) {
-      print('Error fetching module settings: $e');
+      debugPrint('Error fetching module settings: $e');
       return {};
     }
   }
@@ -121,7 +122,7 @@ class ModuleSettings extends _$ModuleSettings {
         throw result.exception!;
       }
     } catch (e) {
-      print('Error updating settings: $e');
+      debugPrint('Error updating settings: $e');
       // Revert optimization on error (reload)
       ref.invalidateSelf();
       rethrow;
